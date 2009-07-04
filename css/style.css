@@ -10,7 +10,8 @@ body {
 }
 
 #wrapper {
-	background : #000;
+	width : 100%;
+	background : #007CDE;
 }
 
 #header {
@@ -21,6 +22,7 @@ body {
 #container {
 	padding-left: 200px;   /* LC width */
   	padding-right: 200px;  /* RC width */
+	background : #000;
 }
 
 #container .column {
@@ -36,7 +38,6 @@ body {
 
 #left {
   	width: 200px;          /* LC width */
-	height : 100%;
   	right: 200px;          /* LC width */
   	margin-left: -100%;
 }
@@ -90,9 +91,7 @@ body {
 	color: #FFF;
 	display: block;
 	background: url(../images/nav-buttons.gif);
-	background : #007CDE;
 	padding: 5px 0 1px 20px;
-	height : 100%;
 }
 	
 #left_menu li a:hover, #left_menu li a:active {
