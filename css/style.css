@@ -36,10 +36,16 @@ body {
 	margin: 0 0 0 0; /* top right bottom left */
 }
 
+#content_wrapper {
+	padding-left: 10px;	/* LC width */
+	padding-right:10px; /* RC width */
+}
+
 #left {
   	width: 200px;          /* LC width */
   	right: 200px;          /* LC width */
   	margin-left: -100%;
+
 }
 
 #right {
