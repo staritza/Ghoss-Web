@@ -118,20 +118,20 @@ body {
 	padding: 5px 0 1px 20px;
 }
 	
-#left_side_bar {
+#right_side_bar {
 	font-family: Tahoma, Verdana, sans-serif, Helvetica;
 	color: #F5F5F5;
 	font-size: 10px;
-	padding: 0px;
+	padding: 0 0 0 10px; 
 }
 
-#left_side_bar a:link, #LeftSideBar a:visited {
+#right_side_bar a:link, #LeftSideBar a:visited {
 	color: #FFF;
 	text-decoration: underline;
 	font-weight: normal;
 }
 
-#left_side_bar a:hover {
+#right_side_bar a:hover {
 	color: #FFF;
 	text-decoration: underline;
 	font-weight: normal;
