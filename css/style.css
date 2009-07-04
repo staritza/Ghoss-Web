@@ -21,8 +21,8 @@ body {
 
 #search_form {
 	float: right;
-	padding-right:10px;
-	vertical-align:middle;
+	padding-right: 10px;
+	padding-top:50px;
 }
 
 #container {
@@ -87,7 +87,7 @@ body {
 	padding-top: 35px;
 	padding-left: 50px;
 	font-weight: bold;
-	
+	width: 150px;	
 }
 	
 #left_menu {
