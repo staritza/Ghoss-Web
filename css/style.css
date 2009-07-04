@@ -1,187 +1,127 @@
+/**
+ * Using the code here for the layout. Its neatly done :-)
+ * http://www.alistapart.com/articles/holygrail
+ */
+
+/*** Layout Starts ***/
 body {
-	background-color: #ccc;
-	margin: 0;
-	}	
-#MainTable {
-	border: 1px;
-	border-style: solid;
-	border-top-style: none;
-	border-color: #000000;
-	}
-	
-/* =-=-=-=-=-=-=-[ HEADER ]-=-=-=-=-=-=-=- */	
-
-#CompanyName {
-	font-family: Tahoma, Verdana, Arial;
-	color: #FFF;
-	font-size: 30px;
-	padding-top: 35px;
-	padding-left: 40px;
-	font-weight: bold;
+  	min-width: 550px;      /* 2x LC width + RC width */
+	background : #CCCCCC;
 }
 
-#lang {
-	padding-left : 60px;
-}
-#lang ul {
-	display : inline;
-	list-style : none;
+#wrapper {
+	background : #000;
 }
 
-#lang ul li {
-	display : inline;
-	list-style : none;
+#header {
+	background: url(../images/bgcolor02.png) repeat-x; 
+	height : 149px;
 }
 
-#lang li a {
-	color : #FFF;
-	font-style : bold;
-	text-decoration :none;
-	padding-left: 8px;
-	padding-right : 8px;
-	padding-top : 5px;
-	padding-bottom : 5px;
+#container {
+	padding-left: 200px;   /* LC width */
+  	padding-right: 200px;  /* RC width */
 }
 
-#lang li a:hover {
-	color : #FFF;
-	text-decoration : underline;
-	background : #224466;
+#container .column {
+  	position: relative;
+  	float: left;
 }
 
-#lang img {
-	border : 0;
+#center {
+  	width: 100%;
+	background: #FFFFFF;
+	margin: 0 0 0 0; /* top right bottom left */
 }
 
-
-#CompanyName p {
-	font-family: Tahoma, Verdana, Arial;
-	color: #FFF;
-	font-size: 18px;
-	padding-left : 20px;
-	margin : 0;
-	font-weight: bold;
+#left {
+  	width: 200px;          /* LC width */
+	height : 100%;
+  	right: 200px;          /* LC width */
+  	margin-left: -100%;
 }
 
-#SearchForm {
-	float : right;
-	padding-top : 15px;
-	padding-left : 60px;
-	padding-bottom : 30px;
-}
-
-#submit {
-	background : #224466;
-	color : #FFF;
-	border :1px solid #000;
-	font-style : bold;
-	height : 25px;
+#right {
+	width: 200px;          /* RC width */
+	height : 100%;
+  	margin-right: -200px;  /* RC width */
+	background : #007CDE;
 	
 }
 
-#Tagline {
-	font-family: Tahoma, Verdana, Arial;
-	color: #666;
-	font-style: italic;
-	font-size: 12px;
-	padding-top: -5px;
-	padding-left: 105px;
-	font-weight: normal;
+#footer {
+	clear: both;
 }
-	
-/* =-=-=-=-=-=-=-[ MAIN CONTENT]-=-=-=-=-=-=-=- */	
 
-#MainBody {
-	background-color: #FFFFFF;	
-	}
-	
-#MainContent {
-	font-family: Tahoma, Verdana, sans-serif, Helvetica;
-	color: #333;
-	font-size: 14px;
-	padding: 0px 10px 5px 15px;
-	}
-#MainContent h1{
-	font-size: 18px;
-	color: #333;
-	border-bottom: 1px dashed #CCC;
-	font-weight: normal;
-	}
-#MainContent h2{
-	font-size: 14px;
-	color: #333;
-	font-weight: normal;
-	}		
-#MainContent a:link, #MainContent a:visited {
-	color: #007CDE;
-	text-decoration: none;
-	font-weight: bold;
-	}
-#MainContent a:hover {
-	color: #007CDE;
-	text-decoration: underline;
-	font-weight: bold;
-	}	
-	
-/* =-=-=-=-=-=-=-[LEFT NAVIGATION MENU]-=-=-=-=-=-=-=- */	
+/*** IE6 Fix ***/
+* html #left {
+	left: 150px;           /* RC width */
+}
 
-#LeftMenu ul {
+/*** Layout Ends ***/
+
+/*** General Styling ***/
+#left_menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	}
+}
 	
-#LeftMenu {
+#left_menu {
 	width: 195px;
+	height : 100%;
 	border: 0px solid #CCC;
 	margin: 0px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	color: #FFFFFF;
-	}
+	background : #007CDE;
+}
 	
-#LeftMenu li a {
-  	height: 32px;
+#left_menu li a {
   	voice-family: "\"}\""; 
   	voice-family: inherit;
-  	height: 20px;
+  	height: 26px;
 	text-decoration: none;
 	}	
 	
-#LeftMenu li a:link, #LeftMenu li a:visited {
+#left_menu li a:link, #left_menu li a:visited {
 	color: #FFF;
 	display: block;
 	background: url(../images/nav-buttons.gif);
+	background : #007CDE;
 	padding: 5px 0 1px 20px;
-	}
+	height : 100%;
+}
 	
-#LeftMenu li a:hover, #LeftMenu li a:active {
+#left_menu li a:hover, #left_menu li a:active {
 	color: #FFF;
 	background: url(../images/nav-buttons.gif) 0 -32px;
 	padding: 5px 0 1px 20px;
-	}
+}
 	
-#LeftSideBar {
+#left_side_bar {
 	font-family: Tahoma, Verdana, sans-serif, Helvetica;
 	color: #F5F5F5;
 	font-size: 10px;
 	padding: 6px;
-	}
-#LeftSideBar a:link, #LeftSideBar a:visited {
-	color: #FFF;
-	text-decoration: underline;
-	font-weight: normal;
-	}
-#LeftSideBar a:hover {
-	color: #FFF;
-	text-decoration: underline;
-	font-weight: normal;
-	}				
-						
-/* =-=-=-=-=-=-=-[ FOOTER ]-=-=-=-=-=-=-=- */		
+}
 
-#Footer {
+#left_side_bar a:link, #LeftSideBar a:visited {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+#left_side_bar a:hover {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: normal;
+}				
+						
+/*** footer styling ***/		
+#footer {
 	background-color: #343434;
 	background-position: top;
 	font-family: Tahoma, Verdana, sans-serif, Helvetica;
@@ -189,88 +129,23 @@ body {
 	color: #CCC;
 	padding-top:5px;
 	text-align: center;
-	}
-#Footer ul li{
+}
+
+#footer ul li{
 	display : inline;
 	margin : 0;
+}
 	
-}	
-#Footer ul li a:link, #Footer ul li a:visited {		
+#footer ul li a:link, #footer ul li a:visited {		
 	padding-left: 0px;
 	padding-right : 0px;
 	padding-top : 5px;
 	padding-bottom : 5px;
 	text-decoration: none;
 	color:#CCC
-	}
-#Footer ul li a:hover {		
+}
+
+#footer ul li a:hover {		
 	text-decoration: underline;
 	color:#FFF
-	}	
-
-/* =-=-=-=-=-=-=-[ FINEP PRINT ]-=-=-=-=-=-=-=- */
-
-#FinePrint {
-	font-family: Tahoma, Verdana, sans-serif, Helvetica;
-	font-size: 10px;
-	color: #666;
-	padding-top:10px;
-	text-align: center;
-	}
-#FinePrint a:link, #FinePrint a:visited {		
-	text-decoration: none;
-	color:#666
-	}
-#FinePrint a:hover {		
-	text-decoration: underline;
-	color:#444
-	}	
-	
-/* =-=-=-=-=-=-=-[ MISCELLEOUS ]-=-=-=-=-=-=-=- */
-
-#inputbox {
-  	font-family: Verdana, Arial, sans-serif; 
-  	background:#FFFFFF none repeat scroll 0 0;
-	border:1px solid #000;
-	color:#454545;
-	font-size:11px;
-	height:16px;
-	margin-left:20px;
-	padding:5px 2px 2px;
-  }
-
-.zonesdetextes {
-  	font-family: Verdana, Arial, sans-serif; 
-  	background:#FFFFFF none repeat scroll 0 0;
-	border:1px solid #000;
-	color:#454545;
-	font-size:11px;
-	height:16px;
-	margin-left:20px;
-	padding:5px 2px 2px;
-  }
-
-#Rates {
-	width : 180px;
-	border : 1px solid #000;
-}
-
-#Rates h3{
-	margin : 0;
-	padding : 0;
-	text-align : center;
-	height : 30px;
-	color :#000;
-	background :#FFF;
-	width : 180px;
-	border-bottom : 1px solid #000;
-}
-
-#Rates p {
-	font-style : bold;
-	font-size : 14px;
-	color : blue;
-	background : #FFF;
-	margin : 0;
-	padding : 10px;
 }
