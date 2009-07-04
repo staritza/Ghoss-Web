@@ -73,6 +73,16 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+#company_name{
+	font-family: Tahoma, Verdana, Arial;
+	color: #FFF;
+	font-size: 50px;
+	padding-top: 35px;
+	padding-left: 50px;
+	font-weight: bold;
+	
+}
 	
 #left_menu {
 	width: 195px;
