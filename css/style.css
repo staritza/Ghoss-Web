@@ -19,6 +19,12 @@ body {
 	height : 149px;
 }
 
+#search_form {
+	float: right;
+	padding-right:10px;
+	vertical-align:middle;
+}
+
 #container {
 	padding-left: 200px;   /* LC width */
   	padding-right: 200px;  /* RC width */
